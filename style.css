@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap");
+
+/* CSS Reset */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* CSS Reset */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Kumbh Sans";
+}
+
+body {
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+
+  height: 100%;
+  width: 100%;
+
+  justify-content: center;
+  align-items: center;
+
+  background: hsl(185, 75%, 39%);
+}
+
+.top-circle {
+  position: absolute;
+  top: -64%;
+  left: -20.5%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+
+  min-height: 385px;
+  max-height: 385px;
+  height: fit-content;
+  min-width: 353px;
+  max-width: 353px;
+  width: 24.5%;
+
+  z-index: 1;
+
+  border-radius: 15px;
+  box-shadow: 0 14px 28px hsl(185deg 90% 18% / 31%),
+    0 10px 10px rgb(25 162 174 / 19%);
+}
+
+.card-bg {
+  border-radius: 15px 15px 0 0;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -54px;
+}
+
+.card-body img {
+  width: 30%;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.card-body h1 {
+  margin: 25px 0 0 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card-body span {
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+}
+
+.card-body h2 {
+  margin: 12px 0 30px 0;
+  font-size: 15px;
+  color: hsl(227, 10%, 46%);
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 1px solid #ccc;
+  padding: 25px 30px;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats span {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.stats p {
+  margin-top: 10px;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.bottom-circle {
+  position: absolute;
+  bottom: -82%;
+  right: -19%;
+}
+
+@media (max-width: 1250px) {
+  .top-circle {
+    top: -30%;
+    left: -43%;
+  }
+
+  .bottom-circle {
+    bottom: -15%;
+    right: -45%;
+  }
+}
