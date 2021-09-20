@@ -4,6 +4,7 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
+  overflow: hidden;
 }
 
 *,
@@ -76,9 +77,8 @@ body {
   background: white;
 
   min-height: 385px;
-  max-height: 385px;
   height: fit-content;
-  min-width: 353px;
+  min-width: fit-content;
   max-width: 353px;
   width: 24.5%;
 
@@ -108,7 +108,7 @@ body {
 }
 
 .card-body h1 {
-  margin: 25px 0 0 0;
+  margin: 20px 0 0 0;
   font-size: 18px;
   font-weight: 700;
 }
@@ -129,7 +129,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   border-top: 1px solid #ccc;
-  padding: 25px 30px;
+  padding: 25px 25px;
 }
 
 .stats {
@@ -144,9 +144,10 @@ body {
 }
 
 .stats p {
-  margin-top: 10px;
+  margin-top: 5px;
   font-size: 10px;
   letter-spacing: 2px;
+  font-weight: 300;
 }
 
 .bottom-circle {
